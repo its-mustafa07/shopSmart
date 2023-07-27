@@ -19,13 +19,4 @@ export const ButtonWrapper = styled.button`
   user-select: none;
   width: ${(props) => props.width};
   transition: all 0.1s ease-in;
-
-  ::-moz-focus-inner {
-    border: 0;
-  }
-
-  &:active {
-    background-color: ${({ activeColor }) =>
-      activeColor ? "#838383" : "#006067"};
-  }
 `;

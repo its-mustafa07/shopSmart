@@ -1,12 +1,23 @@
 import { styled } from "styled-components";
 
+export const Overley = styled.div`
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  right: ${(props) => (props.showSetting ? 0 : "100%")};
+  transition: all 0.5s ease-in-out;
+  background: rgba(1, 1, 1, 0.26);
+`;
+
 export const MainWrapper = styled.div`
   width: 29.5rem;
   z-index: 10;
   height: 100vh;
   /* border-radius: 0.5rem; */
-  background: white;
-  position: absolute;
+  background-color: white;
+  /* position: absolute; */
   top: 0;
   left: ${(props) => (props.showSetting ? 0 : "-300px")};
   transition: left 0.3s ease-in-out;

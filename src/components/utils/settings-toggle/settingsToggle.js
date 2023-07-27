@@ -13,7 +13,10 @@ const SettingsToggle = () => {
     <div
       tabIndex="0"
       onBlur={HandleBlur}
-      style={{ display: "inline-block", marginLeft: "1rem" }}
+      style={{
+        display: "inline-block",
+        marginLeft: "1rem",
+      }}
     >
       <svg
         width="26"
