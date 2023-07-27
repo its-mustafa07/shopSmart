@@ -32,27 +32,34 @@ export const HeadingWrapper = styled.h3`
   margin-top: 4.3rem;
   margin-bottom: 1.7rem;
 `;
-
 export const ShopSmartWrap = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3.6rem;
 `;
-
+export const UserInfOWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.6rem;
+`;
 export const Heading = styled.h3`
   color: #000;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 2rem;
-  margin-left: 3rem;
+  /* margin-bottom: 1rem; */
+  margin-left: 2.9rem;
+`;
+export const LinkWrap = styled.link`
+  background-color: red;
 `;
 export const Paragraph = styled.p`
   color: #000;
-  margin-left: 3rem;
+  margin-left: 2.9rem;
   font-size: 1.8rem;
-  margin-bottom: 1.3rem;
+  display: flex;
+  /* gap: 1.5rem; */
   font-style: normal;
   font-weight: 400;
   line-height: normal;

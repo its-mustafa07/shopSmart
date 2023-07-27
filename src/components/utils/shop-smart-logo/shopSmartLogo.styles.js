@@ -6,7 +6,7 @@ export const ShopSmartWrapper = styled.div`
   height: 82px;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 4.4rem;
   align-items: center;
 
   @media (max-width: 340px) {
