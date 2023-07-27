@@ -14,35 +14,23 @@ import { useNavigate } from "react-router-dom";
 
 const CustomerContact = () => {
   const navigate = useNavigate();
-  // const [textareaChange, setTextareaChange] = useState({
-  //   title: "",
-  //   email: "",
-  //   message: "",
-  // });
 
-  const [title, setTitle] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState({
+    title: "",
+    email: "",
+    message: "",
+  });
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setTextareaChange((prevFormData) => ({
-  //     ...prevFormData,
-  //     [name]: value,
-  //   }));
-
-  //   setTextareaChange("");
-  // };
-
+  const handleChange = (e) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
+  console.log(formData);
   const handleSubmit = () => {
     alert("hello");
-    // setTextareaChange("");
   };
-
-  // const { title, email, message } = textareaChange;
-
-  // const isSubmitButtonDisabled =
-  //   !textareaChange.title || !textareaChange.email || !textareaChange.message;
 
   return (
     <>
@@ -53,8 +41,8 @@ const CustomerContact = () => {
           type={"text"}
           width={"32rem"}
           height={"5rem"}
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          value={formData.title}
+          onChange={handleChange}
           name={"title"}
           placeholder={"Title ..."}
         />
@@ -63,15 +51,15 @@ const CustomerContact = () => {
           width={"32rem"}
           height={"5rem"}
           name={"email"}
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={formData.email}
+          onChange={handleChange}
           placeholder={"Email"}
         />
         <TextArea
           placeholder={"Type here ..."}
           name={"message"}
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          value={formData.message}
+          onChange={handleChange}
         />
         <Buttons>
           <Button
@@ -85,27 +73,19 @@ const CustomerContact = () => {
             Cancel
           </Button>
 
-          {/* <Button
+          <Button
             bg={(props) =>
               props.disabled
                 ? props.theme.color.primaryDisabled
                 : props.theme.color.primary
             }
             color={(props) => props.theme.color.white}
-            disabled={!title && !email && !message}
             onClick={handleSubmit}
             width={"11rem"}
             height={"5rem"}
           >
             Send
-          </Button> */}
-          {title && email && message ? (
-            <button type="button">Button</button>
-          ) : (
-            <button type="button" disabled>
-              Button
-            </button>
-          )}
+          </Button>
         </Buttons>
         <TextPara>
           <p>HelpLine</p>

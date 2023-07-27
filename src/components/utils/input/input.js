@@ -6,6 +6,7 @@ const Input = ({
   type,
   placeholder,
   value,
+  name,
   onChange,
   children,
 }) => {
@@ -15,6 +16,7 @@ const Input = ({
       height={height}
       type={type}
       placeholder={placeholder}
+      name={name}
       value={value}
       onChange={onChange}
       requireds
