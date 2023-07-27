@@ -18,6 +18,13 @@ const HomeData = [
     imgURL: cover4,
     path: "search",
   },
+  { id: 5, name: "Stores Nearby", imgURL: cover3, path: "discount" },
+  {
+    id: 6,
+    name: "Search Products",
+    imgURL: cover4,
+    path: "search",
+  },
 ];
 
 export default HomeData;

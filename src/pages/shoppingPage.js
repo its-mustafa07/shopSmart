@@ -35,7 +35,7 @@ const ShoppingPage = () => {
       <QRcodeWrappr>
         <QRcode marginBottom="5.4rem" />
       </QRcodeWrappr>
-      <ListView height="30vh">
+      <ListView height="50vh">
         {SearchProductData.map((data) => (
           <>
             <ListItem

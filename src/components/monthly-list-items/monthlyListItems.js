@@ -17,7 +17,7 @@ const MonthlyListItems = () => {
   };
 
   return (
-    <ListView height="50vh">
+    <ListView height="70vh">
       {monthlyListData.map((item) => {
         return (
           <ListItem

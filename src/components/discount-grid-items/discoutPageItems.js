@@ -4,7 +4,7 @@ import LiftedGridItem from "../utils/lifted-grid-item/liftedGridItem";
 
 const DiscountPageItems = () => {
   return (
-    <GridView height="55vh">
+    <GridView height="72vh">
       {LiftedGrid.map((item) => {
         return (
           <LiftedGridItem
