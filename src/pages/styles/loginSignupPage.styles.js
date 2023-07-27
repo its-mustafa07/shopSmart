@@ -8,3 +8,6 @@ export const AuthContainer = styled.div`
   transform: translateX(${(props) => (props.isLoginVisible ? "0" : "-50%")});
   transition: transform 0.5s;
 `;
+export const MainAuthContainer = styled.div`
+  overflow: hidden;
+`;

@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
 
 export const InputWrapper = styled.input`
-  width: 27rem;
-  height: 5rem;
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
   padding: ${(props) => props.theme.spacing.lg};
   font-size: ${(props) => props.theme.typography.sizes.md};
   background-color: #e4e4e6;

@@ -37,6 +37,8 @@ const SignUp = ({ handleClick }) => {
           type={"text"}
           placeholder={"Full Name"}
           required
+          width={"32rem"}
+          height={"5rem"}
           value={formData.fullname}
           onChange={handleChange}
         />
@@ -44,6 +46,8 @@ const SignUp = ({ handleClick }) => {
           type={"text"}
           placeholder={"Username"}
           required
+          width={"32rem"}
+          height={"5rem"}
           value={formData.username}
           onChange={handleChange}
         />
@@ -51,6 +55,8 @@ const SignUp = ({ handleClick }) => {
           type={"email"}
           placeholder={"Email"}
           required
+          width={"32rem"}
+          height={"5rem"}
           value={formData.email}
           onChange={handleChange}
         />
@@ -58,6 +64,8 @@ const SignUp = ({ handleClick }) => {
           type={"password"}
           placeholder={"Password"}
           required
+          width={"32rem"}
+          height={"5rem"}
           value={formData.password}
           onChange={handleChange}
         />
