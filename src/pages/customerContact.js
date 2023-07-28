@@ -90,6 +90,7 @@ const CustomerContact = () => {
             color={(props) => props.theme.color.white}
             disabled={isSubmitButtonDisabled}
             type="submit"
+            onClick={handleSubmit}
             width={"11rem"}
             height={"5rem"}
           >

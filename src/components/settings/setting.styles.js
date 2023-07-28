@@ -1,12 +1,23 @@
 import { styled } from "styled-components";
 
+export const Overley = styled.div`
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  right: ${(props) => (props.showSetting ? 0 : "100%")};
+  transition: all 0.5s ease-in-out;
+  background: rgba(1, 1, 1, 0.26);
+`;
+
 export const MainWrapper = styled.div`
   width: 29.5rem;
   z-index: 10;
   height: 100vh;
   /* border-radius: 0.5rem; */
-  background: white;
-  position: absolute;
+  background-color: white;
+  /* position: absolute; */
   top: 0;
   left: ${(props) => (props.showSetting ? 0 : "-300px")};
   transition: left 0.3s ease-in-out;
@@ -32,27 +43,34 @@ export const HeadingWrapper = styled.h3`
   margin-top: 4.3rem;
   margin-bottom: 1.7rem;
 `;
-
 export const ShopSmartWrap = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3.6rem;
 `;
-
+export const UserInfOWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.6rem;
+`;
 export const Heading = styled.h3`
   color: #000;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 2rem;
-  margin-left: 3rem;
+  /* margin-bottom: 1rem; */
+  margin-left: 2.9rem;
+`;
+export const LinkWrap = styled.link`
+  background-color: red;
 `;
 export const Paragraph = styled.p`
   color: #000;
-  margin-left: 3rem;
+  margin-left: 2.9rem;
   font-size: 1.8rem;
-  margin-bottom: 1.3rem;
+  display: flex;
+  /* gap: 1.5rem; */
   font-style: normal;
   font-weight: 400;
   line-height: normal;

@@ -1,39 +1,32 @@
 const SettingData = [
   {
-    heading: "Account Setting",
-    paragraph: "Basic Info",
+    heading: "Account settings",
+    options: ["Basic info"],
   },
+
   {
     heading: "Notification",
-    paragraph: "Email & phone",
+    options: ["Email & phone", "Push Notification"],
   },
-  {
-    paragraph: "Push Notification",
-  },
+
   {
     heading: "Contact Us",
-    paragraph: "Help & Centre",
+    options: ["Help & Centre"],
   },
-  {
-    heading: "Contact Us",
-    paragraph: "Help & Centre",
-  },
+
   {
     heading: "Legal",
-    paragraph: "Privacy Policy",
+    options: [
+      "Privacy Policy",
+      "Term of Services",
+      "Licence",
+      "Restore Purchaces",
+    ],
   },
-  {
-    paragraph: "Term of Services",
-  },
-  {
-    paragraph: "Licence",
-  },
-  {
-    paragraph: "Restore Purchaces",
-  },
+
   {
     heading: "Software",
-    paragraph: "Update",
+    options: ["Update"],
   },
 ];
 
