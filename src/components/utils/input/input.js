@@ -7,6 +7,7 @@ const Input = ({
   placeholder,
   value,
   onChange,
+  name,
   children,
 }) => {
   return (
@@ -15,9 +16,10 @@ const Input = ({
       height={height}
       type={type}
       placeholder={placeholder}
+      name={name}
       value={value}
       onChange={onChange}
-      requireds
+      required
     >
       {children}
     </InputWrapper>

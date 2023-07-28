@@ -6,7 +6,7 @@ import TextArea from "../components/utils/text-area/textArea";
 import Input from "../components/utils/input/input";
 import {
   Buttons,
-  MainContent,
+  Form,
   ParagraphText,
   TextPara,
 } from "./styles/customerContact.styles";
@@ -14,64 +14,60 @@ import { useNavigate } from "react-router-dom";
 
 const CustomerContact = () => {
   const navigate = useNavigate();
-  // const [textareaChange, setTextareaChange] = useState({
-  //   title: "",
-  //   email: "",
-  //   message: "",
-  // });
+  const [formData, setFormData] = useState({
+    title: "",
+    email: "",
+    message: "",
+  });
 
-  const [title, setTitle] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const { title, email, message } = formData;
+  const isSubmitButtonDisabled = !(
+    title.trim() &&
+    email.trim() &&
+    message.trim()
+  );
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setTextareaChange((prevFormData) => ({
-  //     ...prevFormData,
-  //     [name]: value,
-  //   }));
-
-  //   setTextareaChange("");
-  // };
-
-  const handleSubmit = () => {
-    alert("hello");
-    // setTextareaChange("");
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
   };
 
-  // const { title, email, message } = textareaChange;
-
-  // const isSubmitButtonDisabled =
-  //   !textareaChange.title || !textareaChange.email || !textareaChange.message;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
 
   return (
     <>
       <Rectangle />
-      <MainContent>
+      <Form onSubmit={handleSubmit}>
         <ParagraphText>Give Feedback or Contact with Us</ParagraphText>
         <Input
-          type={"text"}
+          type="text"
           width={"32rem"}
           height={"5rem"}
+          name="title"
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          name={"title"}
-          placeholder={"Title ..."}
+          onChange={handleChange}
+          placeholder="Title ..."
         />
         <Input
-          type={"text"}
-          width={"32rem"}
-          height={"5rem"}
-          name={"email"}
+          type="text"
+          width="32rem"
+          height="5rem"
+          name="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder={"Email"}
+          onChange={handleChange}
+          placeholder="Email"
         />
         <TextArea
-          placeholder={"Type here ..."}
-          name={"message"}
+          placeholder="Type here ..."
+          name="message"
           value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          onChange={handleChange}
         />
         <Buttons>
           <Button
@@ -85,33 +81,26 @@ const CustomerContact = () => {
             Cancel
           </Button>
 
-          {/* <Button
+          <Button
             bg={(props) =>
               props.disabled
                 ? props.theme.color.primaryDisabled
                 : props.theme.color.primary
             }
             color={(props) => props.theme.color.white}
-            disabled={!title && !email && !message}
-            onClick={handleSubmit}
+            disabled={isSubmitButtonDisabled}
+            type="submit"
             width={"11rem"}
             height={"5rem"}
           >
             Send
-          </Button> */}
-          {title && email && message ? (
-            <button type="button">Button</button>
-          ) : (
-            <button type="button" disabled>
-              Button
-            </button>
-          )}
+          </Button>
         </Buttons>
         <TextPara>
           <p>HelpLine</p>
           <p>051 - 5467891</p>
         </TextPara>
-      </MainContent>
+      </Form>
       <Navigation />
     </>
   );
