@@ -4,43 +4,40 @@ import {
   Paragraph,
   ShopSmartWrap,
   MainWrapper,
-  UserInfOWrapper,
+  UserInfoWrapper,
   Overley,
+  SettingsItemsWrapper,
+  SettingsSectionWrapper,
 } from "./setting.styles";
 import ShopSmart from "../utils/shop-smart-logo/shopSmartLogo";
 import UserInfo from "../utils/user-info/userInfo";
 import { Link } from "react-router-dom";
 
-const Setting = ({ showSetting, HandleBlur }) => {
+const Setting = ({ showSettings }) => {
   return (
-    <Overley showSetting={showSetting} tabIndex="0" HandleBlur={HandleBlur}>
-      <MainWrapper>
+    <div>
+      <Overley showSettings={showSettings} tabIndex={0} />
+      <MainWrapper showSettings={showSettings}>
         <ShopSmartWrap>
           <ShopSmart />
         </ShopSmartWrap>
-        <UserInfOWrapper>
+        <UserInfoWrapper>
           <UserInfo />
-        </UserInfOWrapper>
-        <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+        </UserInfoWrapper>
+        <SettingsItemsWrapper>
           {SettingData.map((item) => (
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "1.5rem",
-              }}
-            >
+            <SettingsSectionWrapper>
               <Heading>{item.heading}</Heading>
               {item.options.map((option) => (
                 <Link style={{ textDecoration: "none" }}>
                   <Paragraph>{option}</Paragraph>
                 </Link>
               ))}
-            </div>
+            </SettingsSectionWrapper>
           ))}
-        </div>
+        </SettingsItemsWrapper>
       </MainWrapper>
-    </Overley>
+    </div>
   );
 };
 

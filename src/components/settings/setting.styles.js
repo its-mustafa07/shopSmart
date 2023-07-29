@@ -6,8 +6,8 @@ export const Overley = styled.div`
   position: absolute;
   z-index: 9;
   top: 0;
-  right: ${(props) => (props.showSetting ? 0 : "100%")};
-  transition: all 0.5s ease-in-out;
+  left: 0;
+  visibility: ${({ showSettings }) => (showSettings ? "visible" : "hidden")};
   background: rgba(1, 1, 1, 0.26);
 `;
 
@@ -15,12 +15,12 @@ export const MainWrapper = styled.div`
   width: 29.5rem;
   z-index: 10;
   height: 100vh;
-  /* border-radius: 0.5rem; */
-  background-color: white;
-  /* position: absolute; */
+  background-color: ${({ theme }) => theme.color.white};
+  position: absolute;
   top: 0;
-  left: ${(props) => (props.showSetting ? 0 : "-300px")};
+  left: ${({ showSettings }) => (showSettings ? 0 : "-300px")};
   transition: left 0.3s ease-in-out;
+  overflow: auto;
 
   @media (max-width: 340px) {
     width: 26.5rem;
@@ -48,18 +48,30 @@ export const ShopSmartWrap = styled.div`
   justify-content: center;
   margin-bottom: 3.6rem;
 `;
-export const UserInfOWrapper = styled.div`
+export const UserInfoWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 3.6rem;
 `;
+
+export const SettingsItemsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`;
+
+export const SettingsSectionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+`;
+
 export const Heading = styled.h3`
   color: #000;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  /* margin-bottom: 1rem; */
   margin-left: 2.9rem;
 `;
 export const LinkWrap = styled.link`
@@ -70,7 +82,6 @@ export const Paragraph = styled.p`
   margin-left: 2.9rem;
   font-size: 1.8rem;
   display: flex;
-  /* gap: 1.5rem; */
   font-style: normal;
   font-weight: 400;
   line-height: normal;

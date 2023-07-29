@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import Setting from "../../settings/setting";
 
 const SettingsToggle = () => {
-  const [showSetting, setShowSetting] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
   const HandleClickShow = () => {
-    setShowSetting(true);
+    setShowSettings(true);
   };
   const HandleBlur = () => {
-    setShowSetting(false);
+    setShowSettings(false);
   };
   return (
     <div
@@ -33,7 +33,7 @@ const SettingsToggle = () => {
         />
       </svg>
 
-      <Setting showSetting={showSetting} HandleBlur={HandleBlur} />
+      <Setting showSettings={showSettings} HandleBlur={HandleBlur} />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import { Wrapper, FlexWrapper } from "./rectangel.styles";
 import SettingsToggle from "../settings-toggle/settingsToggle";
 
-const Rectangle = ({ marginBottom, greetings, user }) => {
+const Rectangle = ({ marginBottom }) => {
   return (
     <Wrapper marginBottom={marginBottom}>
       <FlexWrapper>

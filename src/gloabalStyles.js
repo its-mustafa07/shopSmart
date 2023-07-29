@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         font-family: ${(props) => props.theme.typography.fontFamily};
+        background-color: ${({ theme }) => theme.color.white};
         
     }
 `;

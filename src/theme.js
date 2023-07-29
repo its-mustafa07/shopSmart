@@ -3,7 +3,7 @@ const theme = {
     primary: "#06919A",
     primaryDisabled: "rgba(6, 145, 154, 0.59)",
     secondary: "#E4E4E6",
-    white: "#FFFFFF",
+    white: "rgba(255, 255, 255);",
     semiWhite: "rgba(255, 255, 255, 0.9);",
     black: "rgba(0, 0, 0, 0.69)",
     gray: "rgba(0, 0, 0, 0.46)",
