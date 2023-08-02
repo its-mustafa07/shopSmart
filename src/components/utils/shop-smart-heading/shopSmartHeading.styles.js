@@ -7,11 +7,9 @@ export const ShopSmartWrapper = styled.div`
 `;
 export const ShopSmartStyled = styled.h3`
   color: ${(props) => props.theme.color.primary};
-  font-family: ${(props) => props.theme.typography.fontFamily};
-
-  font-size: calc(${(props) => props.theme.typography.fontSize.sm}+ 0.2rem);
-
+  font-family: ${({ theme }) => theme.typography.fontFamily};
+  font-weight: calc(${({ theme }) => theme.typography.fontWeight.bold});
+  font-size: calc(${({ theme }) => theme.typography.fontSize.sm} + 0.2rem);
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
 `;

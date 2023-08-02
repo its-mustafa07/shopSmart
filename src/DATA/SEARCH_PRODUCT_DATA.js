@@ -14,6 +14,7 @@ const SearchProductData = [
     ItemWhishlist: whishList,
     ItemWishlishFill: wishListFill,
     ItemMenuIcon: menuIcon,
+    date: "15/07/2023",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const SearchProductData = [
     ItemWhishlist: whishList,
     ItemWishlishFill: wishListFill,
     ItemMenuIcon: menuIcon,
+    date: "15/07/2023",
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ const SearchProductData = [
     ItemWhishlist: whishList,
     ItemWishlishFill: wishListFill,
     ItemMenuIcon: menuIcon,
+    date: "15/07/2023",
   },
   {
     id: 4,
@@ -44,6 +47,7 @@ const SearchProductData = [
     ItemWhishlist: whishList,
     ItemWishlishFill: wishListFill,
     ItemMenuIcon: menuIcon,
+    date: "15/07/2023",
   },
   {
     id: 5,
@@ -54,6 +58,7 @@ const SearchProductData = [
     ItemWhishlist: whishList,
     ItemWishlishFill: wishListFill,
     ItemMenuIcon: menuIcon,
+    date: "15/07/2023",
   },
   {
     id: 6,
@@ -64,6 +69,7 @@ const SearchProductData = [
     ItemWhishlist: whishList,
     ItemWishlishFill: wishListFill,
     ItemMenuIcon: menuIcon,
+    date: "15/07/2023",
   },
   {
     id: 7,
@@ -74,6 +80,7 @@ const SearchProductData = [
     ItemWhishlist: whishList,
     ItemWishlishFill: wishListFill,
     ItemMenuIcon: menuIcon,
+    date: "15/07/2023",
   },
   {
     id: 8,
@@ -84,6 +91,7 @@ const SearchProductData = [
     ItemWhishlist: whishList,
     ItemWishlishFill: wishListFill,
     ItemMenuIcon: menuIcon,
+    date: "15/07/2023",
   },
 ];
 

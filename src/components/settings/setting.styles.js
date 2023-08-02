@@ -17,11 +17,13 @@ export const MainWrapper = styled.div`
   height: 100vh;
   background-color: ${({ theme }) => theme.color.white};
   position: absolute;
-  top: 0;
+  top: ${({ theme }) => theme.spacing.none};
   left: ${({ showSettings }) => (showSettings ? 0 : "-300px")};
   transition: left 0.3s ease-in-out;
   overflow: auto;
-
+  /* @media (max-width: 768px) {
+    width: 36.5rem;
+  } */
   @media (max-width: 340px) {
     width: 26.5rem;
   }
@@ -29,60 +31,42 @@ export const MainWrapper = styled.div`
     width: 23.5rem;
   }
 `;
-
-export const HeadingWrapper = styled.h3`
-  color: ${(props) => props.theme.color.primary};
-  font-family: ${(props) => props.theme.typography.fontFamily};
-  font-size: 2.2rem;
-  font-style: normal;
-  font-weight: ${(props) => props.theme.typography.fontWeight.regular};
-  line-height: normal;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4.3rem;
-  margin-bottom: 1.7rem;
-`;
 export const ShopSmartWrap = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 3.6rem;
+  margin-bottom: calc(${({ theme }) => theme.spacing.lg} + 0.4rem);
 `;
 export const UserInfoWrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 3.6rem;
+  margin-bottom: calc(${({ theme }) => theme.spacing.lg} + 0.4rem);
 `;
 
 export const SettingsItemsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: calc(${({ theme }) => theme.spacing.sm} - 0.1rem);
 `;
 
 export const SettingsSectionWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: calc(${({ theme }) => theme.spacing.sm} - 0.6rem);
+  margin-left: calc(${({ theme }) => theme.spacing.md} + 0.5rem);
 `;
 
 export const Heading = styled.h3`
-  color: #000;
-  font-size: 1.8rem;
+  color: ${({ theme }) => theme.color.black};
+  font-size: ${({ theme }) => theme.typography.fontSize.sm};
   font-style: normal;
-  font-weight: 700;
+  font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
   line-height: normal;
-  margin-left: 2.9rem;
-`;
-export const LinkWrap = styled.link`
-  background-color: red;
 `;
 export const Paragraph = styled.p`
-  color: #000;
-  margin-left: 2.9rem;
-  font-size: 1.8rem;
+  color: ${({ theme }) => theme.color.black};
+  font-size: calc(${({ theme }) => theme.typography.fontSize.sm} - 0.1rem);
   display: flex;
   font-style: normal;
-  font-weight: 400;
+  font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
   line-height: normal;
 `;

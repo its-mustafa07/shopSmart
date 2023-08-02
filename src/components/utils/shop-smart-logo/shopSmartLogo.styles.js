@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 export const ShopSmartWrapper = styled.div`
-  border-radius: ${(props) => props.theme.spacing.sm};
-  background: ${(props) => props.theme.color.secondary};
+  border-radius: ${({ theme }) => theme.spacing.xxs};
+  background: ${({ theme }) => theme.color.secondary};
   width: 244px;
   height: 82px;
   display: flex;
