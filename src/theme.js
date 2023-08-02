@@ -10,12 +10,12 @@ const theme = {
   },
   typography: {
     fontFamily: "Inter, Sans-serif",
-    sizes: {
-      sm: "1.2rem",
-      md: "1.6rem",
-      lg: "1.8rem",
-      xl: "2rem",
-    },
+    // sizes: {
+    //   sm: "1.2rem",
+    //   md: "1.6rem",
+    //   lg: "1.8rem",
+    //   xl: "2rem",
+    // },
     fontSize: {
       xxs: "1.2rem",
       xs: "1.4rem",

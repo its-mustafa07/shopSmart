@@ -1,32 +1,30 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 20.5rem;
-  /* height: 3.7rem; */
-  height: calc(${(props) => props.theme.spacing.lg} + 0.5rem);
-  background-color: ${(props) => props.theme.color.secondary};
+  width: calc(${({ theme }) => theme.spacing.xxl} + 14.1rem);
+  height: calc(${({ theme }) => theme.spacing.lg} + 0.5rem);
+  background-color: ${({ theme }) => theme.color.secondary};
   display: flex;
   align-items: center;
-  border-radius: ${(props) => props.theme.spacing.sm};
-  gap: ${(props) => props.theme.spacing.lg};
+  border-radius: calc(${({ theme }) => theme.spacing.xxs}+ 0.1rem);
+  gap: ${({ theme }) => theme.spacing.lg};
   @media (max-width: 340px) {
-    width: 19rem;
+    width: calc(${({ theme }) => theme.spacing.xxl}+ 12.6rem);
   }
   @media (max-width: 310px) {
-    width: 16rem;
+    width: calc(${({ theme }) => theme.spacing.xxl}+ 9.6rem);
   }
 `;
 export const SearchInputStyled = styled.input`
-  color: ${(props) => props.theme.color.gray};
+  color: ${({ theme }) => theme.color.gray};
   width: 100%;
   height: 100%;
-  /* background-color: red; */
-  background-color: ${(props) => props.theme.color.secondary};
-  font-family: ${(props) => props.theme.typography.fontFamily};
-  font-size: 1.2rem;
+  background-color: ${({ theme }) => theme.color.secondary};
+  font-family: ${({ theme }) => theme.typography.fontFamily};
+  font-size: ${({ theme }) => theme.typography.fontSize.xxs};
   font-style: normal;
-  font-weight: ${(props) => props.theme.typography.fontWeight.regular};
-  border-radius: ${(props) => props.theme.spacing.sm};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
+  border-radius: ${({ theme }) => theme.spacing.sm};
   line-height: normal;
   border: none;
   outline: none;
@@ -39,5 +37,5 @@ export const SearchInputStyled = styled.input`
 `;
 
 export const SearchIconStyled = styled.img`
-  padding-left: ${(props) => props.theme.spacing.lg};
+  padding-left: ${({ theme }) => theme.spacing.lg};
 `;
