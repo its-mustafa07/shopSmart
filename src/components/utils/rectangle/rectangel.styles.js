@@ -7,10 +7,10 @@ export const Wrapper = styled.div`
   padding-right: 1rem;
   height: 7.5rem;
   width: 100vw;
-  background-color: ${(props) => props.theme.color.primary};
+  background-color: ${({ theme }) => theme.color.primary};
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
-  margin-bottom: ${(props) => props.marginBottom || 0};
+  margin-bottom: ${(marginBottom) => marginBottom || 0};
 `;
 
 export const FlexWrapper = styled.div`

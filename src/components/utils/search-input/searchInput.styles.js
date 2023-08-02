@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
-  height: 3.7rem;
+  height: calc(${({ theme }) => theme.spacing.lg} + 0.5rem);
   width: 20.5rem;
   background-color: ${(props) => props.theme.color.secondary};
   display: flex;

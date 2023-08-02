@@ -14,7 +14,7 @@ export const BackgroundWrapper = styled.div`
   height: 85%;
   width: 100%;
   border-radius: 1rem;
-  background-color: ${(props) => props.theme.color.secondary};
+  background-color: ${({ theme }) => theme.color.secondary};
 `;
 
 export const ContentContainer = styled.div`
@@ -22,7 +22,7 @@ export const ContentContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: ${(props) => props.theme.color.primary};
+  color: ${({ theme }) => theme.color.primary};
   position: absolute;
   top: 0;
   left: 50%;
@@ -34,7 +34,7 @@ export const ImageContainer = styled.div`
   width: 6.3rem;
   height: 6rem;
   border-radius: 0.8rem;
-  background-image: ${(props) => `url(${props.cover})`};
+  background-image: ${({ cover }) => `url(${cover})`};
   background-position: center;
   background-size: cover;
 `;
