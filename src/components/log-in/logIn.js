@@ -33,6 +33,8 @@ const Login = ({ handleClick }) => {
           <Input
             type="text"
             name="username"
+            width={"32rem"}
+            height={"5rem"}
             required
             value={formData.username}
             placeholder={"Username"}
@@ -41,6 +43,8 @@ const Login = ({ handleClick }) => {
           <Input
             type="email"
             name="email"
+            width={"32rem"}
+            height={"5rem"}
             required
             value={formData.email}
             placeholder={"Email"}

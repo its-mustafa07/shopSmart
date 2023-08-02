@@ -21,7 +21,8 @@ export const UserInfAvatar = styled.img`
 
 export const UserName = styled.h3`
   color: rgba(0, 0, 0, 0.9);
-  font-size: 12px;
+
+  font-size: ${(props) => props.theme.typography.sizes.md};
   font-style: normal;
   font-weight: 700;
   line-height: normal;

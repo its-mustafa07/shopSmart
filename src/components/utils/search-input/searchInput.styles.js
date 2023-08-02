@@ -1,8 +1,9 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
-  height: 3.7rem;
   width: 20.5rem;
+  /* height: 3.7rem; */
+  height: calc(${(props) => props.theme.spacing.lg} + 0.5rem);
   background-color: ${(props) => props.theme.color.secondary};
   display: flex;
   align-items: center;
@@ -17,12 +18,15 @@ export const Wrapper = styled.div`
 `;
 export const SearchInputStyled = styled.input`
   color: ${(props) => props.theme.color.gray};
-  width: 15.3rem;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
   background-color: ${(props) => props.theme.color.secondary};
   font-family: ${(props) => props.theme.typography.fontFamily};
   font-size: 1.2rem;
   font-style: normal;
   font-weight: ${(props) => props.theme.typography.fontWeight.regular};
+  border-radius: ${(props) => props.theme.spacing.sm};
   line-height: normal;
   border: none;
   outline: none;

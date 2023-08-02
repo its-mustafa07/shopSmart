@@ -42,7 +42,7 @@ const SearchProduct = () => {
           Add
         </Button>
       </SearchInputWrappr>
-      <ListView height="30vh">
+      <ListView height="48vh">
         {SearchProductData.map((data) => (
           <ListItem
             key={data.id}

@@ -58,6 +58,30 @@ const monthlyListData = [
     date: "01/25/2022 ",
     icon: MenuIcon,
   },
+  {
+    id: 8,
+    url: coverPhoto,
+    heading: "May item list",
+    paragraph: "Grocery list",
+    date: "01/25/2022 ",
+    icon: MenuIcon,
+  },
+  {
+    id: 9,
+    url: coverPhoto,
+    heading: "June item list",
+    paragraph: "Grocery list",
+    date: "01/25/2022 ",
+    icon: MenuIcon,
+  },
+  {
+    id: 10,
+    url: coverPhoto,
+    heading: "July item list",
+    paragraph: "Grocery list",
+    date: "01/25/2022 ",
+    icon: MenuIcon,
+  },
 ];
 
 export default monthlyListData;

@@ -1,35 +1,73 @@
 import React, { useState } from "react";
-import CustomerCareRectangle from "../components/utils/customer-care-rectange/customerCareRactangle";
+import Rectangle from "../components/utils/rectangle/rectangle";
 import Button from "../components/utils/button/button";
 import Navigation from "../components/utils/navigation/navigation";
 import TextArea from "../components/utils/text-area/textArea";
+import Input from "../components/utils/input/input";
 import {
   Buttons,
-  MainContent,
+  Form,
+  ParagraphText,
   TextPara,
 } from "./styles/customerContact.styles";
 import { useNavigate } from "react-router-dom";
 
 const CustomerContact = () => {
   const navigate = useNavigate();
-  const [textareaChange, setTextareaChange] = useState("");
+  const [formData, setFormData] = useState({
+    title: "",
+    email: "",
+    message: "",
+  });
 
-  const handleTextarea = (e) => {
-    setTextareaChange(e.target.value);
+  const { title, email, message } = formData;
+  const isSubmitButtonDisabled = !(
+    title.trim() &&
+    email.trim() &&
+    message.trim()
+  );
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
   };
 
-  const handleSubmit = () => {
-    alert("hello");
-    setTextareaChange("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
   };
+
   return (
     <>
-      <CustomerCareRectangle />
-      <MainContent>
+      <Rectangle />
+      <Form onSubmit={handleSubmit}>
+        <ParagraphText>Give Feedback or Contact with Us</ParagraphText>
+        <Input
+          type="text"
+          width={"32rem"}
+          height={"5rem"}
+          name="title"
+          value={title}
+          onChange={handleChange}
+          placeholder="Title ..."
+        />
+        <Input
+          type="text"
+          width="32rem"
+          height="5rem"
+          name="email"
+          value={email}
+          onChange={handleChange}
+          placeholder="Email"
+        />
         <TextArea
-          placeholder={"Type here ..."}
-          value={textareaChange}
-          onChange={handleTextarea}
+          placeholder="Type here ..."
+          name="message"
+          value={message}
+          onChange={handleChange}
         />
         <Buttons>
           <Button
@@ -50,7 +88,8 @@ const CustomerContact = () => {
                 : props.theme.color.primary
             }
             color={(props) => props.theme.color.white}
-            disabled={!textareaChange}
+            disabled={isSubmitButtonDisabled}
+            type="submit"
             onClick={handleSubmit}
             width={"11rem"}
             height={"5rem"}
@@ -62,7 +101,7 @@ const CustomerContact = () => {
           <p>HelpLine</p>
           <p>051 - 5467891</p>
         </TextPara>
-      </MainContent>
+      </Form>
       <Navigation />
     </>
   );

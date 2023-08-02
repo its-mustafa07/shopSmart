@@ -23,6 +23,24 @@ const SettingData = [
       "Restore Purchaces",
     ],
   },
+  {
+    heading: "Legal",
+    options: [
+      "Privacy Policy",
+      "Term of Services",
+      "Licence",
+      "Restore Purchaces",
+    ],
+  },
+  {
+    heading: "Legal",
+    options: [
+      "Privacy Policy",
+      "Term of Services",
+      "Licence",
+      "Restore Purchaces",
+    ],
+  },
 
   {
     heading: "Software",

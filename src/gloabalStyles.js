@@ -11,12 +11,12 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-overflow-x: hidden;
         height: auto;
     }
 
     body {
         font-family: ${(props) => props.theme.typography.fontFamily};
+        background-color: ${({ theme }) => theme.color.white};
         
     }
 `;
