@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.color.primary};
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
-  margin-bottom: ${(marginBottom) => marginBottom || 0};
+  margin-bottom: ${({ marginBottom }) => marginBottom || 0};
 `;
 
 export const FlexWrapper = styled.div`

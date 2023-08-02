@@ -47,19 +47,17 @@ const CustomerContact = () => {
         <ParagraphText>Give Feedback or Contact with Us</ParagraphText>
         <Input
           type="text"
-          width={"32rem"}
-          height={"5rem"}
           name="title"
+          InputBg={(props) => props.theme.color.secondary}
           value={title}
           onChange={handleChange}
           placeholder="Title ..."
         />
         <Input
           type="text"
-          width="32rem"
-          height="5rem"
           name="email"
           value={email}
+          InputBg={(props) => props.theme.color.secondary}
           onChange={handleChange}
           placeholder="Email"
         />
@@ -75,8 +73,8 @@ const CustomerContact = () => {
             activeColor
             color={(props) => props.theme.color.black}
             bg={(props) => props.theme.color.secondarys}
-            width={"11rem"}
-            height={"5rem"}
+            // width={"11rem"}
+            // height={"5rem"}
           >
             Cancel
           </Button>
@@ -91,8 +89,8 @@ const CustomerContact = () => {
             disabled={isSubmitButtonDisabled}
             type="submit"
             onClick={handleSubmit}
-            width={"11rem"}
-            height={"5rem"}
+            // width={"11rem"}
+            // height={"5rem"}
           >
             Send
           </Button>

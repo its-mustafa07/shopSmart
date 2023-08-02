@@ -23,11 +23,15 @@ export const Form = styled.form`
   Button {
     margin-top: 3rem;
   }
+  @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
+    padding: 7rem 0;
+    gap: 2rem;
+  }
 `;
 export const FormText = styled.p`
   color: ${(props) => props.theme.color.black};
   font-family: ${(props) => props.theme.typography.fontFamily};
-  font-size: ${(props) => props.theme.typography.fontSize.md};
+  font-size: ${(props) => props.theme.typography.fontSize.xs};
   font-weight: ${(props) => props.theme.typography.fontWeight.bold};
 
   span {
