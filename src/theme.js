@@ -10,12 +10,12 @@ const theme = {
   },
   typography: {
     fontFamily: "Inter, Sans-serif",
-    sizes: {
-      sm: "1.2rem",
-      md: "1.6rem",
-      lg: "1.8rem",
-      xl: "2rem",
-    },
+    // sizes: {
+    //   sm: "1.2rem",
+    //   md: "1.6rem",
+    //   lg: "1.8rem",
+    //   xl: "2rem",
+    // },
     fontSize: {
       xxs: "1.2rem",
       xs: "1.4rem",
@@ -26,18 +26,13 @@ const theme = {
       xxl: "3.2rem",
     },
     fontWeight: {
+      thin: 100,
       light: 300,
       regular: 400,
-      exRegular: 500,
-      bold: 600,
+      medium: 500,
+      bold: 700,
       extraBold: 800,
-      //     thin: 100,
-      // light: 300,
-      // regular: 400,
-      // medium: 500,
-      // bold: 700,
-      // extraBold: 800,
-      // black: 900,
+      black: 900,
     },
   },
   spacing: {
@@ -51,6 +46,7 @@ const theme = {
     xxl: "6.4rem",
   },
   breakpoints: {
+    xxs: "310px",
     xs: "350px",
     sm: "480px",
     md: "768px",
