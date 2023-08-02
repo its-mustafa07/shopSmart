@@ -8,10 +8,10 @@ export const ButtonWrapper = styled.button`
   color: ${(props) => props.color};
   cursor: pointer;
   outline: none;
-  font-size: ${(props) => props.fontSize || props.theme.typography.sizes.md};
+  font-size: ${(props) => props.fontSize || props.theme.typography.fontSize.md};
   font-family: ${(props) => props.theme.typography.fontFamily};
   font-weight: ${(props) =>
-    props.fontWeight || props.theme.typography.fontWeight.exRegular};
+    props.fontWeight || props.theme.typography.fontWeight.Regular};
   height: ${(props) => props.height};
   text-shadow: 0.1rem 0.1rem 0.5rem hsla(0, 0%, 0%, 0.5);
   letter-spacing: 0.1rem;

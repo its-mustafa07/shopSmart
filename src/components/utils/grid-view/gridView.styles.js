@@ -6,8 +6,8 @@ export const GridContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   padding: 0 3.5rem;
-  height: ${(props) => props.height || "auto"};
-  margin-bottom: ${(props) => props.marginBottom || 0};
+  height: ${({ height }) => height || "auto"};
+  margin-bottom: ${({ marginBottom }) => marginBottom || 0};
   overflow: auto;
 
   @media (max-width: 370px) {

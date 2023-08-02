@@ -10,12 +10,6 @@ const theme = {
   },
   typography: {
     fontFamily: "Inter, Sans-serif",
-    // sizes: {
-    //   sm: "1.2rem",
-    //   md: "1.6rem",
-    //   lg: "1.8rem",
-    //   xl: "2rem",
-    // },
     fontSize: {
       xxs: "1.2rem",
       xs: "1.4rem",
@@ -46,6 +40,7 @@ const theme = {
     xxl: "6.4rem",
   },
   breakpoints: {
+    xxs: "310px",
     xs: "350px",
     sm: "480px",
     md: "768px",

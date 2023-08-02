@@ -23,6 +23,7 @@ export const UserName = styled.h3`
   color: rgba(0, 0, 0, 0.9);
 
   font-size: ${(props) => props.theme.typography.fontSize.sm};
+
   font-style: normal;
   font-weight: 700;
   line-height: normal;

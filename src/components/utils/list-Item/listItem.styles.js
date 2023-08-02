@@ -9,7 +9,7 @@ export const ListItemWrapper = styled.div`
   width: 28.5rem;
   min-height: 7rem;
   border-radius: 0.8rem;
-  background-color: ${(props) => props.theme.color.secondary};
+  background-color: ${({ theme }) => theme.color.secondary};
   position: relative;
 
   @media (max-width: 340px) {
@@ -28,9 +28,9 @@ export const GapCotainer = styled.div`
 export const CoverImageWrapper = styled.div`
   height: 6rem;
   width: 6.3rem;
-  border: 0.2rem solid ${(props) => props.theme.color.primary};
+  border: 0.2rem solid ${({ theme }) => theme.color.primary};
   border-radius: 0.8rem;
-  background-image: ${(props) => `url(${props.cover})`};
+  background-image: ${({ cover }) => `url(${cover})`};
   background-size: cover;
   background-position: center;
 `;
@@ -39,10 +39,10 @@ export const DescriptionWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  color: ${(props) => props.theme.color.primary};
+  color: ${({ theme }) => theme.color.primary};
   height: 5rem;
 `;
 
 export const Para = styled.p`
-  font-size: ${(props) => props.theme.typography.sizes.sm};
+  font-size: ${({ theme }) => theme.typography.fontSize.xxs};
 `;

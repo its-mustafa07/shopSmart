@@ -5,6 +5,6 @@ export const ListViewWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  height: ${(props) => props.height || "auto"};
+  height: ${({ height }) => height || "auto"};
   overflow: auto;
 `;
