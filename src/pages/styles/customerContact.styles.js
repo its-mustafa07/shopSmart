@@ -8,12 +8,14 @@ export const Form = styled.form`
   padding: 5rem 2rem;
   gap: 3rem;
 `;
+
 export const Buttons = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 3rem;
 `;
+
 export const TextPara = styled.div`
   width: 100%;
   display: flex;
@@ -21,6 +23,7 @@ export const TextPara = styled.div`
   padding: 0 4rem;
   position: absolute;
   bottom: 10rem;
+
   p {
     color: ${(props) => props.theme.color.black};
     font-family: ${(props) => props.theme.typography.fontFamily};
@@ -30,6 +33,7 @@ export const TextPara = styled.div`
     line-height: normal;
   }
 `;
+
 export const ParagraphText = styled.div`
   color: ${(props) => props.theme.color.black};
   font-family: ${(props) => props.theme.typography.fontFamily};
