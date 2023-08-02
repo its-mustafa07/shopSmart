@@ -19,6 +19,7 @@ export const UList = styled.ul`
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  padding: 1rem 0.5rem;
+  padding: calc(${({ theme }) => theme.spacing.xs} + 0.2rem)
+    calc(${({ theme }) => theme.spacing.xxs} + 0.1rem);
   height: inherit;
 `;

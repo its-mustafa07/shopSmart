@@ -4,7 +4,7 @@ import LiftedGridItem from "../utils/lifted-grid-item/liftedGridItem";
 
 const MonthlyGridItems = () => {
   return (
-    <GridView height="50vh">
+    <GridView height="70vh">
       {monthlyListData.map((item) => (
         <LiftedGridItem
           key={item.id}
