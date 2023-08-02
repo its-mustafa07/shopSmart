@@ -44,5 +44,5 @@ export const DescriptionWrapper = styled.div`
 `;
 
 export const Para = styled.p`
-  font-size: ${(props) => props.theme.typography.sizes.sm};
+  font-size: ${(props) => props.theme.typography.fontSize.sm};
 `;

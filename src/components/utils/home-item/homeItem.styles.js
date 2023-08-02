@@ -8,7 +8,7 @@ export const ItemWrapper = styled.div`
 `;
 
 export const ItemName = styled.p`
-  font-size: ${(props) => props.theme.typography.sizes.lg};
+  font-size: ${(props) => props.theme.typography.fontSize.lg};
   color: ${(props) => props.theme.color.primary};
   margin: 1.5rem 0;
   font-weight: ${(props) => props.theme.typography.fontWeight.bold};

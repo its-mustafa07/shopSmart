@@ -8,7 +8,7 @@ export const ShopSmartWrapper = styled.div`
 export const ShopSmartStyled = styled.h3`
   color: ${(props) => props.theme.color.primary};
   font-family: ${(props) => props.theme.typography.fontFamily};
-  font-size: ${(props) => props.theme.typography.sizes.lg};
+  font-size: ${(props) => props.theme.typography.fontSize.lg};
   font-style: normal;
   font-weight: 700;
   line-height: normal;
