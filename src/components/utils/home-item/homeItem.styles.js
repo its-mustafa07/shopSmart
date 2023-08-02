@@ -10,16 +10,27 @@ export const ItemWrapper = styled.div`
 export const ItemName = styled.p`
   font-size: calc(${({ theme }) => theme.typography.fontSize.sm} + 0.2rem);
   color: ${({ theme }) => theme.color.primary};
-  margin: 1.5rem 0;
-  font-weight: calc(${({ theme }) => theme.typography.fontWeight.bold} -100);
+  margin: calc(${({ theme }) => theme.spacing.sm} - 0.1rem) 0;
+  font-weight: calc(${({ theme }) => theme.typography.fontWeight.bold} - 100);
 `;
 
 export const ImageWrapper = styled.div`
   max-width: 15rem;
   max-height: 15rem;
+
   border: 0.4rem solid ${({ theme }) => theme.color.primary};
   background-image: ${({ imgUrl }) => `url(${imgUrl})`};
   background-size: cover;
   background-position: center;
   border-radius: 1rem;
+
+  @media (max-width: calc(${({ theme }) => theme.breakpoints.xs} + 40px)) {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  /* @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    width: 18rem;
+    height: 18rem;
+  } */
 `;

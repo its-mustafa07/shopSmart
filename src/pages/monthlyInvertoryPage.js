@@ -31,7 +31,7 @@ const MonthlyInventory = () => {
           {gridView ? (
             <img src={gridSVG} alt="grid view" />
           ) : (
-            <img src={listSVG} alt="grid view" />
+            <img src={listSVG} alt="list view" />
           )}
         </div>
       </SearchWrapper>

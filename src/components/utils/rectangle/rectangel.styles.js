@@ -3,8 +3,8 @@ import { styled } from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  padding-left: 3rem;
-  padding-right: 1rem;
+  padding-left: calc(${({ theme }) => theme.spacing.md} + 0.4rem);
+  padding-right: calc(${({ theme }) => theme.spacing.sm} + 0.4rem);
   height: 7.5rem;
   width: 100vw;
   background-color: ${({ theme }) => theme.color.primary};

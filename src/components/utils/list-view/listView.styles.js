@@ -4,7 +4,7 @@ export const ListViewWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: calc(${({ theme }) => theme.spacing.sm} + 0.4rem);
   height: ${({ height }) => height || "auto"};
   overflow: auto;
 `;

@@ -6,7 +6,7 @@ export const LiftedGridWrapper = styled.div`
   align-items: flex-end;
   height: 15rem;
   width: 14rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: calc(${({ theme }) => theme.spacing.sm} + 0.2rem);
   text-align: center;
 `;
 
