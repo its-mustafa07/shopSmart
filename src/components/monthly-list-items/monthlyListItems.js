@@ -3,7 +3,7 @@ import monthlyListData from "../../DATA/MONTHLY_LIST";
 import ListItem from "../utils/list-Item/listItem";
 import { useState } from "react";
 
-const MonthlyListItems = () => {
+const MonthlyListItems = ({ paddingBottom }) => {
   const [selectedItem, setSelectedItem] = useState(null);
 
   const handleClick = (id) => {
@@ -17,7 +17,7 @@ const MonthlyListItems = () => {
   };
 
   return (
-    <ListView height="70vh">
+    <ListView height="70vh" style={{ paddingBottom }}>
       {monthlyListData.map((item) => {
         return (
           <ListItem

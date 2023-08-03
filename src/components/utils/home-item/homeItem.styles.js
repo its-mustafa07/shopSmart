@@ -15,8 +15,8 @@ export const ItemName = styled.p`
 `;
 
 export const ImageWrapper = styled.div`
-  max-width: 15rem;
-  max-height: 15rem;
+  width: 15rem;
+  height: 15rem;
   border: 0.4rem solid ${({ theme }) => theme.color.primary};
   background-image: ${({ imgUrl }) => `url(${imgUrl})`};
   background-size: cover;
@@ -27,9 +27,4 @@ export const ImageWrapper = styled.div`
     width: 18rem;
     height: 18rem;
   }
-
-  /* @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    width: 18rem;
-    height: 18rem;
-  } */
 `;

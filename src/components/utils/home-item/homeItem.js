@@ -6,13 +6,7 @@ const HomeItem = ({ itemName, imgUrl, path }) => {
   return (
     <ItemWrapper onClick={() => navigate(`/${path}`)}>
       <ItemName>{itemName}</ItemName>
-      <ImageWrapper
-        imgUrl={imgUrl}
-        style={{
-          height: "15rem",
-          width: "15rem",
-        }}
-      />
+      <ImageWrapper imgUrl={imgUrl} />
     </ItemWrapper>
   );
 };

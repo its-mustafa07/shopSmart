@@ -7,10 +7,10 @@ import ShopSmartHeading from "../components/utils/shop-smart-heading/shopSmartHe
 const HomePage = () => {
   return (
     <>
-      <Rectangle marginBottom="3rem" greetings="Welcome," user="Mr. Anderson" />
+      <Rectangle marginBottom="3rem" />
       <ShopSmartHeading marginBottom="1rem" />
-      <HomeItems marginBottom="2.6rem" />
-      <SpecialOffers />
+      <HomeItems paddingBottom="6.6rem" />
+      {/* <SpecialOffers /> */}
       <Navigation />
     </>
   );

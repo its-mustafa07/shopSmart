@@ -2,9 +2,9 @@ import GridView from "../utils/grid-view/gridView";
 import HomeItem from "../utils/home-item/homeItem";
 import HomeData from "../../DATA/HOME_DATA";
 
-const HomeItems = ({ marginBottom }) => {
+const HomeItems = ({ paddingBottom }) => {
   return (
-    <div style={{ marginBottom }}>
+    <div style={{ paddingBottom: paddingBottom ? paddingBottom : 0 }}>
       <GridView>
         {HomeData.map((item) => (
           <HomeItem

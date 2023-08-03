@@ -2,9 +2,9 @@ import monthlyListData from "../../DATA/MONTHLY_LIST";
 import GridView from "../utils/grid-view/gridView";
 import LiftedGridItem from "../utils/lifted-grid-item/liftedGridItem";
 
-const MonthlyGridItems = () => {
+const MonthlyGridItems = ({ paddingBottom }) => {
   return (
-    <GridView height="70vh">
+    <GridView height="70vh" style={{ paddingBottom: paddingBottom }}>
       {monthlyListData.map((item) => (
         <LiftedGridItem
           key={item.id}

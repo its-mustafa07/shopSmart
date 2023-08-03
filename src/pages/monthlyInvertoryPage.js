@@ -37,7 +37,11 @@ const MonthlyInventory = () => {
           </div>
         </div>
       </SearchWrapper>
-      {gridView ? <MonthlyListItems /> : <MonthlyGridItems />}
+      {gridView ? (
+        <MonthlyListItems paddingBottom="6.6rem" />
+      ) : (
+        <MonthlyGridItems paddingBottom="6.6rem" />
+      )}
 
       <Navigation />
     </>
