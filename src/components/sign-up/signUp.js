@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 
-import { SignupForm, SignupIcons, SignupWrapper, Text } from "./signUp.styles";
+import {
+  SignupForm,
+  AuthMethods,
+  SignupIcons,
+  SignupWrapper,
+  Text,
+} from "./signUp.styles";
 import AuthRectangle from "../utils/auth-rectangle/authRectangle";
 import Input from "../utils/input/input";
 import google from "../../Assets/svgs/google.svg";
@@ -65,25 +71,27 @@ const SignUp = ({ handleClick }) => {
           value={formData.password}
           onChange={handleChange}
         />
-        <Text>Sign Up with</Text>
-        <SignupIcons>
-          <img src={google} alt={""} />
-          <img src={facebook} alt={""} />
-          <img src={twitter} alt={""} />
-        </SignupIcons>
-        <Button
-          activeColor={"#000"}
-          width={"11rem"}
-          height={"5rem"}
-          bg={(props) => props.theme.color.primary}
-          color={(props) => props.theme.color.white}
-        >
-          Sign Up
-        </Button>
-        <Text>
-          Already have an Account?
-          <span onClick={handleClick}>Sign In</span>
-        </Text>
+        <AuthMethods>
+          <Text>Sign Up with</Text>
+          <SignupIcons>
+            <img src={google} alt={""} />
+            <img src={facebook} alt={""} />
+            <img src={twitter} alt={""} />
+          </SignupIcons>
+          <Button
+            activeColor={"#000"}
+            width={"11rem"}
+            height={"5rem"}
+            bg={(props) => props.theme.color.primary}
+            color={(props) => props.theme.color.white}
+          >
+            Sign Up
+          </Button>
+          <Text>
+            Already have an Account?
+            <span onClick={handleClick}>Sign In</span>
+          </Text>
+        </AuthMethods>
       </SignupForm>
     </SignupWrapper>
   );

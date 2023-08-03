@@ -17,4 +17,13 @@ export const InputWrapper = styled.input`
     width: 90%;
     height: 4rem;
   }
+  @media (max-height: 670px) {
+    width: 40%;
+    height: 4rem;
+  }
+  @media (max-height: 430px) {
+    width: 40%;
+    height: 3rem;
+    font-size: ${(props) => props.theme.typography.fontSize.xs};
+  }
 `;
