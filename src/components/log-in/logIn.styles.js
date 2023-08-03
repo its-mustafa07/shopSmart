@@ -27,6 +27,17 @@ export const Form = styled.form`
     padding: 7rem 0;
     gap: 2rem;
   }
+  @media (max-height: 590px) {
+    gap: 1rem;
+    padding: 5rem 0;
+  }
+  @media (max-height: 440px) {
+    gap: 1rem;
+    padding: 3rem 0;
+    Button {
+      margin-top: 0;
+    }
+  }
 `;
 export const FormText = styled.p`
   color: ${(props) => props.theme.color.black};

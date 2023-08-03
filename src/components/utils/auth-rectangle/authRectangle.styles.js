@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const RectangleWrapper = styled.div`
   width: 100vw;
-  height: 27vh;
+  height: 20rem;
   border-radius: 0rem 0rem 6rem 6rem;
   background: rgba(6, 145, 154, 0.38);
   display: flex;
@@ -10,6 +10,12 @@ export const RectangleWrapper = styled.div`
   padding-left: ${(props) => props.theme.spacing.lg};
   padding-right: ${(props) => props.theme.spacing.xs};
   align-items: center;
+  @media (max-height: 490px) {
+    height: 16rem;
+  }
+  @media (max-height: 440px) {
+    height: 12rem;
+  }
 `;
 
 export const RectangleContent = styled.div`
@@ -20,6 +26,15 @@ export const RectangleContent = styled.div`
   img {
     width: 6rem;
     height: 6rem;
+  }
+  @media (max-height: 440px) {
+    /* flex-direction: row;
+    align-items: center; */
+    gap: 0.5rem;
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 `;
 export const HeadingText = styled.div`
@@ -53,6 +68,20 @@ export const SvgImage = styled.div`
     img {
       width: 8rem;
       height: 8rem;
+    }
+  }
+  @media (max-height: 490px) {
+    margin-top: 3rem;
+    img {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+  @media (max-height: 440px) {
+    margin-top: 1rem;
+    img {
+      width: 7rem;
+      height: 7rem;
     }
   }
 `;

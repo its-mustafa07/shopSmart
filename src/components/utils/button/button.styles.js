@@ -23,4 +23,9 @@ export const ButtonWrapper = styled.button`
     width: calc(${(props) => props.theme.spacing.xxl} + 2rem);
     height: ${(props) => props.theme.spacing.xl};
   }
+  @media (max-height: 430px) {
+    width: ${(props) => props.theme.spacing.xxl};
+    height: calc(${(props) => props.theme.spacing.xl} - 1rem);
+    font-size: ${(props) => props.theme.typography.fontSize.xs};
+  }
 `;

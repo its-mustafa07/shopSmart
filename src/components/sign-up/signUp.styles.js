@@ -24,7 +24,13 @@ export const Text = styled.h6`
     font-size: ${(props) => props.theme.typography.fontSize.xxs};
   }
 `;
-export const SignupIcons = styled.div``;
+export const SignupIcons = styled.div`
+  @media (max-height: 430px) {
+    img {
+      width: 3rem;
+    }
+  }
+`;
 export const SignupForm = styled.form`
   display: flex;
   flex-direction: column;
@@ -39,5 +45,29 @@ export const SignupForm = styled.form`
   @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
     gap: 1rem;
     padding-top: 1.5rem;
+  }
+  @media (max-height: 775px) {
+    gap: 1.5rem;
+    padding-top: 3rem;
+  }
+  @media (max-height: 670px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-height: 430px) {
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+`;
+export const AuthMethods = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  @media (max-height: 430px) {
+    gap: 0.5rem;
   }
 `;
