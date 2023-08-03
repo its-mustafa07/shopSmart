@@ -8,15 +8,19 @@ export const ButtonWrapper = styled.button`
   color: ${(props) => props.color};
   cursor: pointer;
   outline: none;
-  font-size: ${(props) => props.fontSize || props.theme.typography.fontSize.md};
+  font-size: ${(props) => props.theme.typography.fontSize.md};
   font-family: ${(props) => props.theme.typography.fontFamily};
-  font-weight: ${(props) =>
-    props.fontWeight || props.theme.typography.fontWeight.Regular};
-  height: ${(props) => props.height};
-  text-shadow: 0.1rem 0.1rem 0.5rem hsla(0, 0%, 0%, 0.5);
-  letter-spacing: 0.1rem;
+  font-weight: ${(props) => props.theme.typography.fontWeight.Regular};
+  height: calc(${(props) => props.theme.spacing.xl} + 1rem);
   border-radius: ${(props) => props.borderRadius || "0.4rem"};
-  user-select: none;
-  width: ${(props) => props.width};
-  transition: all 0.1s ease-in;
+  width: calc(${(props) => props.theme.spacing.xxl} + 4rem);
+  @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
+    font-size: ${(props) => props.theme.typography.fontSize.xs};
+    width: ${(props) => props.theme.spacing.xxl};
+    height: ${(props) => props.theme.spacing.xl};
+  }
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    width: calc(${(props) => props.theme.spacing.xxl} + 2rem);
+    height: ${(props) => props.theme.spacing.xl};
+  }
 `;

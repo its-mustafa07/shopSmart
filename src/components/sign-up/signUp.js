@@ -37,8 +37,7 @@ const SignUp = ({ handleClick }) => {
           type={"text"}
           placeholder={"Full Name"}
           required
-          width={"32rem"}
-          height={"5rem"}
+          InputBg={`${(props) => props.color.semiwhite}`}
           value={formData.fullname}
           onChange={handleChange}
         />
@@ -46,8 +45,7 @@ const SignUp = ({ handleClick }) => {
           type={"text"}
           placeholder={"Username"}
           required
-          width={"32rem"}
-          height={"5rem"}
+          InputBg={`${(props) => props.color.semiwhite}`}
           value={formData.username}
           onChange={handleChange}
         />
@@ -55,8 +53,7 @@ const SignUp = ({ handleClick }) => {
           type={"email"}
           placeholder={"Email"}
           required
-          width={"32rem"}
-          height={"5rem"}
+          InputBg={`${(props) => props.color.semiwhite}`}
           value={formData.email}
           onChange={handleChange}
         />
@@ -64,8 +61,7 @@ const SignUp = ({ handleClick }) => {
           type={"password"}
           placeholder={"Password"}
           required
-          width={"32rem"}
-          height={"5rem"}
+          InputBg={`${(props) => props.color.semiwhite}`}
           value={formData.password}
           onChange={handleChange}
         />
@@ -85,7 +81,7 @@ const SignUp = ({ handleClick }) => {
           Sign Up
         </Button>
         <Text>
-          Already have an Account? &nbsp;
+          Already have an Account?
           <span onClick={handleClick}>Sign In</span>
         </Text>
       </SignupForm>

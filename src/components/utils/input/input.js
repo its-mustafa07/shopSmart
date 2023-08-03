@@ -1,8 +1,7 @@
 import { InputWrapper } from "./input.styles";
 
 const Input = ({
-  width,
-  height,
+  InputBg,
   type,
   placeholder,
   value,
@@ -12,8 +11,7 @@ const Input = ({
 }) => {
   return (
     <InputWrapper
-      width={width}
-      height={height}
+      InputBg={InputBg}
       type={type}
       placeholder={placeholder}
       name={name}
