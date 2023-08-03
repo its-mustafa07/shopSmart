@@ -21,18 +21,20 @@ const MonthlyInventory = () => {
     <>
       <Rectangle marginBottom="4rem" />
       <SearchWrapper>
-        <SearchInput placeholder="Seach Your Monthly List" />
-        <img
-          onClick={() => navigate("/shopping-page")}
-          src={editSVG}
-          alt="edit"
-        />
-        <div onClick={handleClick}>
-          {gridView ? (
-            <img src={gridSVG} alt="grid view" />
-          ) : (
-            <img src={listSVG} alt="list view" />
-          )}
+        <SearchInput placeholder="Seach Your List" />
+        <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+          <img
+            onClick={() => navigate("/shopping-page")}
+            src={editSVG}
+            alt="edit"
+          />
+          <div onClick={handleClick}>
+            {gridView ? (
+              <img src={gridSVG} alt="grid view" />
+            ) : (
+              <img src={listSVG} alt="list view" />
+            )}
+          </div>
         </div>
       </SearchWrapper>
       {gridView ? <MonthlyListItems /> : <MonthlyGridItems />}

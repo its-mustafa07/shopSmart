@@ -17,7 +17,6 @@ export const ItemName = styled.p`
 export const ImageWrapper = styled.div`
   max-width: 15rem;
   max-height: 15rem;
-
   border: 0.4rem solid ${({ theme }) => theme.color.primary};
   background-image: ${({ imgUrl }) => `url(${imgUrl})`};
   background-size: cover;

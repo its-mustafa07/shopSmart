@@ -8,10 +8,10 @@ const HomeItem = ({ itemName, imgUrl, path }) => {
       <ItemName>{itemName}</ItemName>
       <ImageWrapper
         imgUrl={imgUrl}
-        // style={{
-        //   height: "15rem",
-        //   width: "15rem",
-        // }}
+        style={{
+          height: "15rem",
+          width: "15rem",
+        }}
       />
     </ItemWrapper>
   );
