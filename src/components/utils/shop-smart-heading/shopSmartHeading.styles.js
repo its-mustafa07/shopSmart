@@ -12,4 +12,7 @@ export const ShopSmartStyled = styled.h3`
   font-size: calc(${({ theme }) => theme.typography.fontSize.sm} + 0.2rem);
   font-style: normal;
   line-height: normal;
+  @media (min-width: 413px) {
+    font-size: ${({ theme }) => theme.typography.fontSize.md};
+  }
 `;

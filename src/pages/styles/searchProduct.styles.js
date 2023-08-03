@@ -4,9 +4,7 @@ export const QRcodeWrappr = styled.div`
   justify-content: center;
 `;
 export const SearchInputWrappr = styled.div`
-  /* padding: 1rem; */
   width: 80%;
-  /* background-color: red; */
   display: flex;
   gap: calc(${(props) => props.theme.spacing.sm} + 0.4rem);
   justify-content: center;

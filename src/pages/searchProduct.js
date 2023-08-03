@@ -38,7 +38,7 @@ const SearchProduct = () => {
           <SearchInput placeholder="Add List" marginBottom="4.4rem" />
           <Button
             height="3.7rem"
-            width="5rem"
+            width="6rem"
             fontWeight={theme.typography.fontWeight.medium}
             color={theme.color.white}
             fontSize={theme.typography.fontSize.xs}

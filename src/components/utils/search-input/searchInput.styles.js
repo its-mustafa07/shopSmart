@@ -1,11 +1,11 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 50%;
+  width: 60%;
   /* width: calc(${({ theme }) => theme.spacing.xxl} + 14.1rem); */
   height: calc(${({ theme }) => theme.spacing.lg} + 0.5rem);
   background-color: ${({ theme }) => theme.color.secondary};
-  border-radius: calc(${({ theme }) => theme.spacing.xxs}+ 0.1rem);
+  border-radius: calc(${({ theme }) => theme.spacing.xxs} + 0.1rem);
   gap: calc(${({ theme }) => theme.spacing.sm} - 0.2rem);
   display: flex;
   align-items: center;
