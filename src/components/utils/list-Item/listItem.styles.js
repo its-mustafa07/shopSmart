@@ -10,7 +10,11 @@ export const ListItemWrapper = styled.div`
   min-height: 7rem;
   border-radius: 0.8rem;
   background-color: ${({ theme }) => theme.color.secondary};
-  position: relative;
+  /* position: relative; */
+
+  img {
+    position: relative;
+  }
 `;
 
 export const GapCotainer = styled.div`

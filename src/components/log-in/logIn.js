@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Form, FormText, LoginWrapper } from "./logIn.styles";
-import AuthRectangle from "../utils/auth-rectangle/authRectangle";
+import AuthHeader from "../utils/auth-header/authHeader";
 import Input from "../utils/input/input";
 import Button from "../utils/button/button";
 
@@ -25,7 +25,7 @@ const Login = ({ handleClick }) => {
   return (
     <>
       <LoginWrapper>
-        <AuthRectangle
+        <AuthHeader
           heading={"Welcome to ShopSmart"}
           paragraph={"Fill Login form below correctly"}
         />
@@ -35,6 +35,8 @@ const Login = ({ handleClick }) => {
             name="username"
             InputBg={"rgba(255, 255, 255)"}
             required
+            width={"70%"}
+            height={"4.5rem"}
             value={formData.username}
             placeholder={"Username"}
             onChange={handleChange}
@@ -43,14 +45,16 @@ const Login = ({ handleClick }) => {
             type="email"
             InputBg={"rgba(255, 255, 255)"}
             required
+            width={"70%"}
+            height={"4.5rem"}
             value={formData.email}
             placeholder={"Email"}
             onChange={handleChange}
           />
           <Button
             bg={(props) => props.theme.color.primary}
-            width={"11rem"}
-            height={"5rem"}
+            width="9rem"
+            height="4.5rem"
             onClick={() => navigate("/home")}
             color={(props) => props.theme.color.white}
             active
